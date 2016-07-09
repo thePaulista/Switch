@@ -15,7 +15,7 @@ public class Main {
         int switchValue = 5;
 
         //testing just the switchValue
-        switch(switchValue) {
+        switch (switchValue) {
             case 1:
                 System.out.println("value was 1");
                 break;
@@ -25,7 +25,9 @@ public class Main {
                 break;
 
             // when you have a multiple hairy number of values
-            case 3:case 4:case 5:
+            case 3:
+            case 4:
+            case 5:
                 System.out.println("was a 3, or a 4, or a 5");
                 System.out.println("was in fact " + switchValue);
                 break;
@@ -34,5 +36,36 @@ public class Main {
                 System.out.println("was not 1 or 2");
                 break; // technically not needed
         }
-    } // break would continue from this point on
+
+        char charValue = 'A';
+        switch (charValue) {
+            case 'A':
+                System.out.println("A was found");
+                break;
+
+            case 'B':
+                System.out.println("B was found");
+                break;
+
+            default:
+                System.out.println("Could not find A, B, C, D, E");
+        }
+
+
+        String month = "january";
+        switch(month.toLowerCase()) {
+            case "january":
+                System.out.println("Jan");
+                break;
+
+            case "june":
+                System.out.println("Jun");
+                break;
+
+            default:
+                System.out.println("Not sure");
+        }
+
+    }
+
 }
